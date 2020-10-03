@@ -1,6 +1,6 @@
 print("""
 Welcome to The Game of Life
-Author- Yash Jaiswal, ig- @bitorsic
+Author- Yash Jaiswal, @bitorsic
 (Choices in this game define your character's personality)
 Enter the number in front of the option to choose
 
