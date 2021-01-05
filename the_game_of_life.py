@@ -16,8 +16,6 @@ def starter():
         start()
     elif menu == 'q' or menu == 'Q':
         exit(0)
-    else:
-        error("strtr")
 
 
 def start():
@@ -56,9 +54,6 @@ def cont(sit):
             stabbing()
         elif sit == "fnl":
             finale()
-        else:
-            print("Continue function error; argument: ", sit)
-            exit(0)
     else:
         print("I didn't quite get that. Please try again")
 
@@ -85,8 +80,6 @@ def error(sit):
         brain()
     elif sit == "slfdfns":
         self_defense()
-    else:
-        print("Error handler crashed; argument: ", sit)
 
 
 def end(ending):
@@ -209,9 +202,6 @@ What do you do?
             print("The bully tried punching you as well, but you dodge it and land him a KO punch.")
             print("But you have a new friend and the bully gets suspended after some explanation.")
             print("Your school now understands that despite being bad at studies, you're good at heart.")
-        else:
-            print("5th std 1st choice error")
-            exit(0)
 
         s_skills = 1
     elif bully == "2":
@@ -281,9 +271,6 @@ What do you do?
             print("Woah! You topped throughout the state. The media's all over you.")
 
             boards = 2
-        else:
-            print("10th std 1st choice error")
-            exit(0)
 
         print("\nIt's now been a month and everyone's stopped caring about your boards results.")
     elif tenth == "2":
@@ -301,9 +288,6 @@ What do you do?
             boards = 1
         elif intelligence == 2:
             error("tnthgrd")
-        else:
-            print("10th std 2nd choice error")
-            exit(0)
 
         print("\nIt's now been a month and everyone's stopped caring about your boards results.")
     elif tenth == "3":
@@ -319,9 +303,6 @@ What do you do?
             print("The scholarship exam as well as your boards.")
 
             boards = 2
-        else:
-            print("10th std 3rd choice error")
-            exit(0)
 
         print("\nIt's now been a month and everyone's stopped caring about your boards results.")
     else:
@@ -348,8 +329,6 @@ def stream():
 2. Commerce
 3. Science
         """)
-    else:
-        print("Stream choice error")
 
     path = input("> ")
 
@@ -361,9 +340,6 @@ def stream():
             print("You choose a field you like in the commerce stream and graduate in it.")
         elif boards == 0:
             error("strm")
-        else:
-            print("Stream 2nd choice error")
-            exit(0)
 
         print("Your parents seem a bit disappointed, but it's your choice.")
     elif path == "3":
@@ -371,9 +347,6 @@ def stream():
             print("You chose a field you like in the science stream and graduate in it.")
         elif boards < 2:
             error("strm")
-        else:
-            print("Stream 3rd choice error")
-            exit(0)
 
         print("Exactly like your parents wanted.")
 
@@ -454,9 +427,6 @@ But die with a small regret of denying your mentor.
     elif s_skills == 1:
         print("Having the social skills, you form healthy relations with your clients,")
         print("Befriend a lot of fellow businessmen/women which eventually help you on your way to success.")
-    else:
-        print("Social skills error")
-        exit(0)
 
     cont("brn")
 
@@ -479,9 +449,6 @@ What do you do?
 1. Take a detailed, long duration course on business education
 3. Continue reading from various sources
             """)
-        else:
-            print("Business education options error")
-            exit(0)
 
         knowledge = input("> ")
 
@@ -514,9 +481,6 @@ But die with a small regret of not seeking proper education.
         print("Being an intelligent person, you know what courses to take and what to ask your mentor")
         print("In order to keep your knowledge sufficient enough to run the business efficiently")
         print("And you do the same.")
-    else:
-        print("Business education error")
-        exit(0)
 
     cont("slfdfns")
 
@@ -542,8 +506,6 @@ What do you do?
 1. Agree
 3. Ignore
             """)
-        else:
-            print("Self defense choices error")
 
         health = input("> ")
 
@@ -569,8 +531,6 @@ What do you do?
     elif strength == 2:
         print("Being involved in sports and fitness since childhood, you know how important it is to keep yourself fit and sharp.")
         print("Hence, you join a self defense class. So you're fit, and always on your toes.")
-    else:
-        print("Self defense error")
 
     cont("stbbng")
 
@@ -610,8 +570,6 @@ You call the emergency services and turns out he had a long history of crimes.
 So he gets sentenced.
 Your family's happy to see you safe.
         """)
-    else:
-        print("Stabbing incident error")
 
     cont("fnl")
 
@@ -642,8 +600,5 @@ In your deathbed, you rest with a wide smile,
 Knowing you'd accomplished all a human ever could.
 You rest in peace.
         """)
-    else:
-        print("Finale error")
-        exit(0)
 
 starter()
